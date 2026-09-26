@@ -1,0 +1,70 @@
+:root {
+  --bg: #111111;
+  --fg: #F5F5F5;
+  --muted: #A1A1AA;
+  --card: #1F1F23;
+  --border: #7C3AED;
+  --accent: #A3E635;
+  --accent-fg: #111111;
+  --warn: #FACC15;
+  --danger: #ff5147;
+  --font: 'Courier New', ui-monospace, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  min-height: 100vh;
+}
+.card {
+  background: var(--card);
+  border: 3px solid var(--border);
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 420px;
+}
+.field { margin-bottom: 12px; }
+.field label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.field input, .field select, .field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 0.9rem;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: var(--fg);
+  color: var(--bg);
+  border: 3px solid var(--border);
+  font-family: var(--font);
+  font-weight: 800;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: center;
+}
+.btn.accent { background: var(--accent); color: var(--accent-fg); }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.hint { font-size: 0.75rem; color: var(--muted); }
+.switchLink {
+  background: none;
+  border: none;
+  color: var(--muted);
+  text-decoration: underline;
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0;
+}
